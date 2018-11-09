@@ -1,0 +1,1664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5290DD9F-D07A-4327-B3EE-6389A3C2C501}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>business</RootNamespace>
+    <AssemblyName>business</AssemblyName>
+    <ApplicationIcon>sjdh.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/business/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\it922\C#\itConsume 加油版\itConsume\itConsume\bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassSenseLock.cs" />
+    <Compile Include="ComboxItem.cs" />
+    <Compile Include="ClassChangeSkins.cs" />
+    <Compile Include="ClassGetInformation.cs" />
+    <Compile Include="D\FormBZXG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormBZXG.Designer.cs">
+      <DependentUpon>FormBZXG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormCGHT_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormCGHT_EDIT.Designer.cs">
+      <DependentUpon>FormCGHT_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormTMCKGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormTMCKGL.Designer.cs">
+      <DependentUpon>FormTMCKGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormTMRKGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormTMRKGL.designer.cs">
+      <DependentUpon>FormTMRKGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormXSHT_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormXSHT_EDIT.Designer.cs">
+      <DependentUpon>FormXSHT_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLACCESS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLACCESS.Designer.cs">
+      <DependentUpon>FormLACCESS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormChangeLimitAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormChangeLimitAccess.Designer.cs">
+      <DependentUpon>FormChangeLimitAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormAccessLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormAccessLimit.Designer.cs">
+      <DependentUpon>FormAccessLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormCHDJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormCHDJCX.Designer.cs">
+      <DependentUpon>FormCHDJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectKFList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectKFList.Designer.cs">
+      <DependentUpon>FormSelectKFList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormXSCKJD_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormXSCKJD_EDIT.Designer.cs">
+      <DependentUpon>FormXSCKJD_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I\FormDataClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I\FormDataClear.Designer.cs">
+      <DependentUpon>FormDataClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectClassList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectClassList.Designer.cs">
+      <DependentUpon>FormSelectClassList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormWRXSFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormWRXSFX.Designer.cs">
+      <DependentUpon>FormWRXSFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormWRKCFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormWRKCFX.Designer.cs">
+      <DependentUpon>FormWRKCFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSCDWDJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSCDWDJ.Designer.cs">
+      <DependentUpon>FormSCDWDJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormKHGXFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormKHGXFX.Designer.cs">
+      <DependentUpon>FormKHGXFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessage.Designer.cs">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormTMHTCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormTMHTCX.Designer.cs">
+      <DependentUpon>FormTMHTCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormXSGJDWWLZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormXSGJDWWLZ.Designer.cs">
+      <DependentUpon>FormXSGJDWWLZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormYJXSCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormYJXSCX.Designer.cs">
+      <DependentUpon>FormYJXSCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormDQDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormDQDAWH.Designer.cs">
+      <DependentUpon>FormDQDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormZWDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormZWDAWH.Designer.cs">
+      <DependentUpon>FormZWDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormZYDAWHCARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormZYDAWHCARD.Designer.cs">
+      <DependentUpon>FormZYDAWHCARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I\FormSystemSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I\FormSystemSet.Designer.cs">
+      <DependentUpon>FormSystemSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormBMDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormBMDAWH.Designer.cs">
+      <DependentUpon>FormBMDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormBMDAWH_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormBMDAWH_CARD.Designer.cs">
+      <DependentUpon>FormBMDAWH_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormBMZLCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormBMZLCX.Designer.cs">
+      <DependentUpon>FormBMZLCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormBQJYGK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormBQJYGK.Designer.cs">
+      <DependentUpon>FormBQJYGK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormCWDJCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormCWDJCL.Designer.cs">
+      <DependentUpon>FormCWDJCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I\FormDataBaseBackUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I\FormDataBaseBackUP.Designer.cs">
+      <DependentUpon>FormDataBaseBackUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I\FormDataBaseReStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I\FormDataBaseReStore.Designer.cs">
+      <DependentUpon>FormDataBaseReStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormDJZX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormDJZX.Designer.cs">
+      <DependentUpon>FormDJZX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormDQSPCRKHZCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormDQSPCRKHZCX.Designer.cs">
+      <DependentUpon>FormDQSPCRKHZCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormDWDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormDWDAWH.Designer.cs">
+      <DependentUpon>FormDWDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormDWDAWH_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormDWDAWH_CARD.Designer.cs">
+      <DependentUpon>FormDWDAWH_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormDWGJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormDWGJCX.Designer.cs">
+      <DependentUpon>FormDWGJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormDWZLCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormDWZLCX.Designer.cs">
+      <DependentUpon>FormDWZLCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormGJDWWLZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormGJDWWLZ.Designer.cs">
+      <DependentUpon>FormGJDWWLZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormGJFKCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormGJFKCX.Designer.cs">
+      <DependentUpon>FormGJFKCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormGJTBJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormGJTBJCX.Designer.cs">
+      <DependentUpon>FormGJTBJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormGJTCCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormGJTCCX.Designer.cs">
+      <DependentUpon>FormGJTCCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormGJYWCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormGJYWCX.Designer.cs">
+      <DependentUpon>FormGJYWCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormGJZPCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormGJZPCX.Designer.cs">
+      <DependentUpon>FormGJZPCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormJHDJPXZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormJHDJPXZ.Designer.cs">
+      <DependentUpon>FormJHDJPXZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormJHFLCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormJHFLCX.Designer.cs">
+      <DependentUpon>FormJHFLCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormJWCKCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormJWCKCX.Designer.cs">
+      <DependentUpon>FormJWCKCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormJWCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormJWCX.Designer.cs">
+      <DependentUpon>FormJWCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormJYZK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormJYZK.Designer.cs">
+      <DependentUpon>FormJYZK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormJZSJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormJZSJCX.Designer.cs">
+      <DependentUpon>FormJZSJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormKCCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormKCCX.Designer.cs">
+      <DependentUpon>FormKCCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormKCSPBSCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormKCSPBSCL.Designer.cs">
+      <DependentUpon>FormKCSPBSCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormFPCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormFPCX.Designer.cs">
+      <DependentUpon>FormFPCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormFPKJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormFPKJ.Designer.cs">
+      <DependentUpon>FormFPKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormFPZF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormFPZF.Designer.cs">
+      <DependentUpon>FormFPZF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormGJSPZD_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormGJSPZD_EDIT.Designer.cs">
+      <DependentUpon>FormGJSPZD_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormJHRKYHD_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormJHRKYHD_EDIT.Designer.cs">
+      <DependentUpon>FormJHRKYHD_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormJHTCZD_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormJHTCZD_EDIT.Designer.cs">
+      <DependentUpon>FormJHTCZD_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormKCJWCKDJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormKCJWCKDJ.Designer.cs">
+      <DependentUpon>FormKCJWCKDJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormKCJWCKDJ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormKCJWCKDJ_EDIT.Designer.cs">
+      <DependentUpon>FormKCJWCKDJ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormKCSPCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormKCSPCS.Designer.cs">
+      <DependentUpon>FormKCSPCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormKCSPCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormKCSPCX.Designer.cs">
+      <DependentUpon>FormKCSPCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormKCSPPD1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormKCSPPD1.Designer.cs">
+      <DependentUpon>FormKCSPPD1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormKCSPPD2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormKCSPPD2.Designer.cs">
+      <DependentUpon>FormKCSPPD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormKCSPZMCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormKCSPZMCL.Designer.cs">
+      <DependentUpon>FormKCSPZMCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormKCSPZZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormKCSPZZ.Designer.cs">
+      <DependentUpon>FormKCSPZZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormKCSXXWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormKCSXXWH.Designer.cs">
+      <DependentUpon>FormKCSXXWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormKFDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormKFDAWH.Designer.cs">
+      <DependentUpon>FormKFDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormKFDAWH_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormKFDAWH_CARD.Designer.cs">
+      <DependentUpon>FormKFDAWH_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormKFSPJCZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormKFSPJCZ.Designer.cs">
+      <DependentUpon>FormKFSPJCZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormKFSPZY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormKFSPZY.Designer.cs">
+      <DependentUpon>FormKFSPZY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormKFZLCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormKFZLCX.Designer.cs">
+      <DependentUpon>FormKFZLCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormPFXSRBB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormPFXSRBB.Designer.cs">
+      <DependentUpon>FormPFXSRBB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I\FormRZCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I\FormRZCX.Designer.cs">
+      <DependentUpon>FormRZCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSCDWCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSCDWCX.Designer.cs">
+      <DependentUpon>FormSCDWCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSCKFCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSCKFCX.Designer.cs">
+      <DependentUpon>FormSCKFCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSCSPCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSCSPCX.Designer.cs">
+      <DependentUpon>FormSCSPCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectBM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectBM.Designer.cs">
+      <DependentUpon>FormSelectBM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormSelectGDFP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormSelectGDFP.Designer.cs">
+      <DependentUpon>FormSelectGDFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectGW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectGW.Designer.cs">
+      <DependentUpon>FormSelectGW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSPBSLSJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSPBSLSJL.Designer.cs">
+      <DependentUpon>FormSPBSLSJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormSPDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormSPDAWH.Designer.cs">
+      <DependentUpon>FormSPDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormSPDAWH_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormSPDAWH_CARD.Designer.cs">
+      <DependentUpon>FormSPDAWH_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormSPDPFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormSPDPFX.Designer.cs">
+      <DependentUpon>FormSPDPFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormSPFLWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormSPFLWH.Designer.cs">
+      <DependentUpon>FormSPFLWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormSPKCJGFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormSPKCJGFX.Designer.cs">
+      <DependentUpon>FormSPKCJGFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormSPKCYJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormSPKCYJ.Designer.cs">
+      <DependentUpon>FormSPKCYJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormSPKCYZFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormSPKCYZFX.Designer.cs">
+      <DependentUpon>FormSPKCYZFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSPPDLSJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSPPDLSJL.Designer.cs">
+      <DependentUpon>FormSPPDLSJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSPTJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSPTJCX.Designer.cs">
+      <DependentUpon>FormSPTJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormSPXSHKFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormSPXSHKFX.Designer.cs">
+      <DependentUpon>FormSPXSHKFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormSPXSPHFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormSPXSPHFX.Designer.cs">
+      <DependentUpon>FormSPXSPHFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSPZHCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSPZHCX.Designer.cs">
+      <DependentUpon>FormSPZHCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormSPZJC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormSPZJC.Designer.cs">
+      <DependentUpon>FormSPZJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSPZLCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSPZLCX.Designer.cs">
+      <DependentUpon>FormSPZLCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormSPZZCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormSPZZCX.Designer.cs">
+      <DependentUpon>FormSPZZCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormSPZZZY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormSPZZZY.Designer.cs">
+      <DependentUpon>FormSPZZZY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormTJTZD1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormTJTZD1.Designer.cs">
+      <DependentUpon>FormTJTZD1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormTJTZD2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormTJTZD2.Designer.cs">
+      <DependentUpon>FormTJTZD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormTMCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormTMCX.Designer.cs">
+      <DependentUpon>FormTMCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormTQXSBJFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormTQXSBJFX.Designer.cs">
+      <DependentUpon>FormTQXSBJFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormWLDWYEDJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormWLDWYEDJ.Designer.cs">
+      <DependentUpon>FormWLDWYEDJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormXFSPZL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormXFSPZL.Designer.cs">
+      <DependentUpon>FormXFSPZL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C\FormXGJWDXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C\FormXGJWDXX.Designer.cs">
+      <DependentUpon>FormXGJWDXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B\FormXGSHXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B\FormXGSHXX.Designer.cs">
+      <DependentUpon>FormXGSHXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormXPPFJGFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormXPPFJGFX.Designer.cs">
+      <DependentUpon>FormXPPFJGFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B\FormXSCKJD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B\FormXSCKJD.Designer.cs">
+      <DependentUpon>FormXSCKJD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAbout.Designer.cs">
+      <DependentUpon>formAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\FormCGHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\FormCGHT.Designer.cs">
+      <DependentUpon>FormCGHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I\formDatabaseSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I\formDatabaseSet.designer.cs">
+      <DependentUpon>formDatabaseSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\FormGJSPZD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\FormGJSPZD.Designer.cs">
+      <DependentUpon>FormGJSPZD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\FormJHRKYHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\FormJHRKYHD.Designer.cs">
+      <DependentUpon>FormJHRKYHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\FormJHTBJDJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\FormJHTBJDJ.Designer.cs">
+      <DependentUpon>FormJHTBJDJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\FormJHTCZD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\FormJHTCZD.Designer.cs">
+      <DependentUpon>FormJHTCZD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectBill.Designer.cs">
+      <DependentUpon>FormSelectBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectClass.Designer.cs">
+      <DependentUpon>FormSelectClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectCommodities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectCommodities.Designer.cs">
+      <DependentUpon>FormSelectCommodities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectComPany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectComPany.Designer.cs">
+      <DependentUpon>FormSelectComPany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectGD.Designer.cs">
+      <DependentUpon>FormSelectGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectHT.Designer.cs">
+      <DependentUpon>FormSelectHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectKF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectKF.Designer.cs">
+      <DependentUpon>FormSelectKF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectZB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommSelect\FormSelectZB.Designer.cs">
+      <DependentUpon>FormSelectZB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B\FormXSCKZD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B\FormXSCKZD.Designer.cs">
+      <DependentUpon>FormXSCKZD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormXSCKZD_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormXSCKZD_EDIT.Designer.cs">
+      <DependentUpon>FormXSCKZD_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormXSFLCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormXSFLCX.Designer.cs">
+      <DependentUpon>FormXSFLCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B\FormXSHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B\FormXSHT.Designer.cs">
+      <DependentUpon>FormXSHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormXSSKCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormXSSKCX.Designer.cs">
+      <DependentUpon>FormXSSKCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormXSTBJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormXSTBJCX.Designer.cs">
+      <DependentUpon>FormXSTBJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B\FormXSTBJDJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B\FormXSTBJDJ.Designer.cs">
+      <DependentUpon>FormXSTBJDJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormXSTHCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormXSTHCX.Designer.cs">
+      <DependentUpon>FormXSTHCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B\FormXSTHZD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B\FormXSTHZD.Designer.cs">
+      <DependentUpon>FormXSTHZD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormXSTHZD_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormXSTHZD_EDIT.Designer.cs">
+      <DependentUpon>FormXSTHZD_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormXSYWCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormXSYWCX.Designer.cs">
+      <DependentUpon>FormXSYWCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G\FormXSZPCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G\FormXSZPCX.Designer.cs">
+      <DependentUpon>FormXSZPCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormXSZTFB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormXSZTFB.Designer.cs">
+      <DependentUpon>FormXSZTFB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormXWDWWLZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormXWDWWLZ.Designer.cs">
+      <DependentUpon>FormXWDWWLZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormYFKFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormYFKFX.Designer.cs">
+      <DependentUpon>FormYFKFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\FormYFZKJS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\FormYFZKJS.Designer.cs">
+      <DependentUpon>FormYFZKJS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormYFZKJS_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormYFZKJS_EDIT.Designer.cs">
+      <DependentUpon>FormYFZKJS_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F\FormYSKFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F\FormYSKFX.Designer.cs">
+      <DependentUpon>FormYSKFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B\FormYSZKJS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B\FormYSZKJS.Designer.cs">
+      <DependentUpon>FormYSZKJS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D\FormYSZKJS_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D\FormYSZKJS_EDIT.Designer.cs">
+      <DependentUpon>FormYSZKJS_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormYWDWZHYEZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormYWDWZHYEZ.Designer.cs">
+      <DependentUpon>FormYWDWZHYEZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E\FormYWSJJZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E\FormYWSJJZ.Designer.cs">
+      <DependentUpon>FormYWSJJZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormZBDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormZBDAWH.Designer.cs">
+      <DependentUpon>FormZBDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormZBDAWH_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormZBDAWH_CARD.Designer.cs">
+      <DependentUpon>FormZBDAWH_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormZYChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormZYChangePass.Designer.cs">
+      <DependentUpon>FormZYChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormZYDAWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormZYDAWH.Designer.cs">
+      <DependentUpon>FormZYDAWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H\FormZYDAWH_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H\FormZYDAWH_CARD.Designer.cs">
+      <DependentUpon>FormZYDAWH_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIBusiness.Designer.cs">
+      <DependentUpon>MDIBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDGV.cs" />
+    <Compile Include="PrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintOptions.designer.cs">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="A\FormCGHT.resx">
+      <DependentUpon>FormCGHT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectClassList.resx">
+      <DependentUpon>FormSelectClassList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectKFList.resx">
+      <DependentUpon>FormSelectKFList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormBZXG.resx">
+      <DependentUpon>FormBZXG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormCGHT_EDIT.resx">
+      <DependentUpon>FormCGHT_EDIT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormTMCKGL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTMCKGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormTMHTCX.resx">
+      <DependentUpon>FormTMHTCX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormTMRKGL.resx">
+      <DependentUpon>FormTMRKGL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormXSGJDWWLZ.resx">
+      <DependentUpon>FormXSGJDWWLZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormXSHT_EDIT.resx">
+      <DependentUpon>FormXSHT_EDIT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLACCESS.resx">
+      <DependentUpon>FormLACCESS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormChangeLimitAccess.resx">
+      <DependentUpon>FormChangeLimitAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormAccessLimit.resx">
+      <DependentUpon>FormAccessLimit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormCHDJCX.resx">
+      <DependentUpon>FormCHDJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormXSCKJD_EDIT.resx">
+      <DependentUpon>FormXSCKJD_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I\FormDataClear.resx">
+      <DependentUpon>FormDataClear.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormWRXSFX.resx">
+      <DependentUpon>FormWRXSFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormWRKCFX.resx">
+      <DependentUpon>FormWRKCFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSCDWDJ.resx">
+      <DependentUpon>FormSCDWDJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormKHGXFX.resx">
+      <DependentUpon>FormKHGXFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessage.resx">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormYJXSCX.resx">
+      <DependentUpon>FormYJXSCX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormDQDAWH.resx">
+      <DependentUpon>FormDQDAWH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormZWDAWH.resx">
+      <DependentUpon>FormZWDAWH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormZYDAWHCARD.resx">
+      <DependentUpon>FormZYDAWHCARD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I\FormSystemSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSystemSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormBMDAWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBMDAWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormBMDAWH_CARD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBMDAWH_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormBMZLCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBMZLCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormBQJYGK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBQJYGK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormCWDJCL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCWDJCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I\FormDataBaseBackUP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDataBaseBackUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I\FormDataBaseReStore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDataBaseReStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormDJZX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDJZX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormDQSPCRKHZCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDQSPCRKHZCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormDWDAWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDWDAWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormDWDAWH_CARD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDWDAWH_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormDWGJCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDWGJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormDWZLCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDWZLCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormGJDWWLZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJDWWLZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormGJFKCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJFKCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormGJTBJCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJTBJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormGJTCCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJTCCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormGJYWCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJYWCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormGJZPCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJZPCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormJHDJPXZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJHDJPXZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormJHFLCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJHFLCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormJWCKCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJWCKCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormJWCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJWCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormJYZK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJYZK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormJZSJCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJZSJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormKCCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormKCSPBSCL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSPBSCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormFPCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFPCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormFPKJ.resx">
+      <DependentUpon>FormFPKJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormFPZF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFPZF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormGJSPZD_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJSPZD_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormJHRKYHD_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJHRKYHD_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormJHTCZD_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJHTCZD_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormKCJWCKDJ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCJWCKDJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormKCJWCKDJ_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCJWCKDJ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormKCSPCS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSPCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormKCSPCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSPCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormKCSPPD1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSPPD1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormKCSPPD2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSPPD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormKCSPZMCL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSPZMCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormKCSPZZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSPZZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormKCSXXWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKCSXXWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormKFDAWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKFDAWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormKFDAWH_CARD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKFDAWH_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormKFSPJCZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKFSPJCZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormKFSPZY.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKFSPZY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormKFZLCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKFZLCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormPFXSRBB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPFXSRBB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I\FormRZCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRZCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSCDWCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSCDWCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSCKFCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSCKFCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSCSPCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSCSPCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectBM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectBM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormSelectGDFP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectGDFP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectGW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectGW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSPBSLSJL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPBSLSJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormSPDAWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPDAWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormSPDAWH_CARD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPDAWH_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormSPDPFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPDPFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormSPFLWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPFLWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormSPKCJGFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPKCJGFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormSPKCYJ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPKCYJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormSPKCYZFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPKCYZFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSPPDLSJL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPPDLSJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSPTJCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPTJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormSPXSHKFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPXSHKFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormSPXSPHFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPXSPHFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSPZHCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPZHCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormSPZJC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPZJC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSPZLCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPZLCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormSPZZCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPZZCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormSPZZZY.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSPZZZY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormTJTZD1.resx">
+      <DependentUpon>FormTJTZD1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormTJTZD2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTJTZD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormTMCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTMCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormTQXSBJFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTQXSBJFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormWLDWYEDJ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWLDWYEDJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormXFSPZL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXFSPZL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C\FormXGJWDXX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXGJWDXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B\FormXGSHXX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXGSHXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormXPPFJGFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXPPFJGFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B\FormXSCKJD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSCKJD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I\formDatabaseSet.resx">
+      <DependentUpon>formDatabaseSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\FormGJSPZD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGJSPZD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\FormJHRKYHD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJHRKYHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\FormJHTBJDJ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJHTBJDJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\FormJHTCZD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormJHTCZD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectBill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectClass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectCommodities.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectCommodities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectComPany.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectComPany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectGD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectHT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectKF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectKF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommSelect\FormSelectZB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectZB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B\FormXSCKZD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSCKZD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormXSCKZD_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSCKZD_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormXSFLCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSFLCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B\FormXSHT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormXSSKCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSSKCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormXSTBJCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSTBJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B\FormXSTBJDJ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSTBJDJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormXSTHCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSTHCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B\FormXSTHZD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSTHZD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormXSTHZD_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSTHZD_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormXSYWCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSYWCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G\FormXSZPCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSZPCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormXSZTFB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXSZTFB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormXWDWWLZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormXWDWWLZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormYFKFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormYFKFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\FormYFZKJS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormYFZKJS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormYFZKJS_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormYFZKJS_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F\FormYSKFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormYSKFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B\FormYSZKJS.resx">
+      <DependentUpon>FormYSZKJS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D\FormYSZKJS_EDIT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormYSZKJS_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormYWDWZHYEZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormYWDWZHYEZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E\FormYWSJJZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormYWSJJZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormZBDAWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormZBDAWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormZBDAWH_CARD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormZBDAWH_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormZYChangePass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormZYChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormZYDAWH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormZYDAWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H\FormZYDAWH_CARD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormZYDAWH_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIBusiness.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDIBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintOptions.resx">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkground.gif" />
+    <Content Include="sjdh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
